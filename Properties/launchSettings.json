@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TestConsole": {
+      "commandName": "Project",
+      "commandLineArgs": "-p 'd:\\files\\834\\mmis\\' -cs 'Server=PSM-srv-20;Initial Catalog=834;user id=Admin834;password=@dm!n834PSM;' -f 2"
+    }
+  }
+}

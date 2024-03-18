@@ -1,0 +1,4 @@
+// appconfig.json(Content, Copy to Output Directory)
+{
+  "Conn": "Server=.;Initial Catalog=834;Trusted_Connection=true"
+}
