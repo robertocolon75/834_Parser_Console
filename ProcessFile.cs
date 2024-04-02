@@ -1,6 +1,6 @@
-﻿using AptusEdiParser;
-using _834FilePareserControl.Models;
+﻿using _834FilePareserControl.Models;
 using _834FilePareserControl.Validators;
+using AptusEdiParser;
 using AutoMapper;
 using Dapper;
 using Microsoft.Extensions.Options;
@@ -72,22 +72,22 @@ namespace _834FilePareserControl
                 var F = new FileParser(filePath);
                 Console.WriteLine("Parsing file...");
                 var file = F.ParseMe();
-                var test = file.Groups.Headers.Loop2000.Where(i => i.Loop2300s != null).Select(x => x.Loop2300s);
+                //var test = file.Groups.Headers.Loop2000.Where(i => i.Loop2300s != null).Select(x => x.Loop2300s);
 
-                foreach (var item in test)
-                {
-                    foreach (var item2 in item)
-                    {
-                        if (item2.Loop2310s != null)
-                        {
-                            Console.WriteLine(item2.Loop2310s);
-                        }
-                        if (item2.Loop2320s != null)
-                        {
-                            Console.WriteLine(item2.Loop2320s);
-                        }
-                    }
-                }
+                //foreach (var item in test)
+                //{
+                //    foreach (var item2 in item)
+                //    {
+                //        if (item2.Loop2310s != null)
+                //        {
+                //            Console.WriteLine(item2.Loop2310s);
+                //        }
+                //        if (item2.Loop2320s != null)
+                //        {
+                //            Console.WriteLine(item2.Loop2320s);
+                //        }
+                //    }
+                //}
                 //JsonDumper.DumpObjectToJsonFile(file, path + "Filetest.json");
                 //return;
                 Console.WriteLine("Mapping file...");
